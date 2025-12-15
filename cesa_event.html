@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESA College Sports Events</title>
+    <link rel="stylesheet" href="cesa_event.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body style="background:#faf7f7;color:#222;font-family:'Montserrat',Arial,sans-serif;">
+
+    <video class="bg-video" id="bgVideo" autoplay muted loop playsinline>
+        <source src="cesa_bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay" id="videoOverlay"></div>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" style="background:transparent;box-shadow:0 2px 8px #0001;position:sticky;top:0;z-index:10;">
+        <div class="header-bar">    
+            
+            <div style="display:flex;align-items:center;gap:24px;">
+                <a href="cesa_event.html" style="margin-right:24px;"><img src="cesa_logo.png" alt="CESA Logo" style="height:80px;"></a>
+                <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;">
+                    <li><a href="cesa_event.html" class="active" style="color:#0056b3;font-weight:700;text-decoration:none;">Home</a></li>
+                    <li><a href="cesa_about.html" style="color:#0056b3;font-weight:700;text-decoration:none;">About</a></li>
+                    <li><a href="gallery.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Gallery</a></li>
+                    <li><a href="cesa cup.html" style="color:#0056b3;font-weight:700;text-decoration:none;">CESA Cup</a></li>   
+                    <li><a href="cenfest.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Cenfest</a></li>
+                    <li><a href="sponsors.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Our Sponsors</a></li>
+                    <li><a href="cesa_contact.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background:transparent center/cover no-repeat;padding:64px 0 32px 0;">
+        <div style="max-width:900px;margin:0 auto;text-align:center;color:#fff;">
+            <img src="cesa_logo.png" alt="CESA Logo" style="height:195px;margin-bottom:16px;filter:drop-shadow(0 4px 16px #0008);">
+            <h1 style="font-size:2.8em;font-weight:700;margin-bottom:12px;">CESA</h1>
+            <h2 style="font-size:1.5em;font-weight:400;margin-bottom:24px;">Annual Inter-College Sports Event</h2>
+            <p style="font-size:1.1em;max-width:700px;margin:0 auto 24px auto;">Gear up for CESA Fest - an exhilarating showcase of sportsmanship! Join us for thrilling sports, fierce competition, and unforgettable moments. Shape the future of sports excitement at CESA!</p>
+            
+            <!-- Countdown Timer (reusable) -->
+            <div class="cesa-countdown" data-target="Nov 7, 2025 00:00:00" style="background:rgba(0,0,0,0.5);padding:24px;border-radius:12px;margin-bottom:24px;display:inline-block;">
+                <h3 style="font-size:1.2em;margin-bottom:16px;">Event Starts In:</h3>
+                <div style="display:flex;gap:24px;justify-content:center;font-family:'Montserrat',sans-serif;">
+                    <div style="text-align:center">
+                        <div class="days" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Days</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="hours" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Hours</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="minutes" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Minutes</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="seconds" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Seconds</div>
+                    </div>
+                </div>
+                <!-- Registration Button -->
+                <a href="cesa cup.html" class="register-btn" style="
+                    display: inline-block;
+                    background: linear-gradient(135deg, #ff6600, #ff3366);
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 16px 40px;
+                    border-radius: 50px;
+                    font-size: 1.2em;
+                    font-weight: 700;
+                    margin-top: 32px;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+                " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(255, 102, 0, 0.4)'"
+                   onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(255, 102, 0, 0.3)'">
+                    Register Now For CESA CUP !🏆
+                </a>
+            </div>
+
+            <!-- Second countdown instance (identical look) -->
+            <div class="cesa-countdown" data-target="Nov 7, 2025 00:00:00" style="background:rgba(0,0,0,0.5);padding:24px;border-radius:12px;margin-bottom:24px;display:inline-block;">
+                <h3 style="font-size:1.2em;margin-bottom:16px;">Event Starts In:</h3>
+                <div style="display:flex;gap:24px;justify-content:center;font-family:'Montserrat',sans-serif;">
+                    <div style="text-align:center">
+                        <div class="days" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Days</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="hours" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Hours</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="minutes" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Minutes</div>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="seconds" style="font-size:2.5em;font-weight:700;color:#ff6600">00</div>
+                        <div style="font-size:0.9em">Seconds</div>
+                    </div>
+                </div>
+                <!-- Registration Button -->
+                <a href="cenfest.html" class="register-btn" style="
+                    display: inline-block;
+                    background: linear-gradient(135deg, #ff6600, #ff3366);
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 16px 40px;
+                    border-radius: 50px;
+                    font-size: 1.2em;
+                    font-weight: 700;
+                    margin-top: 32px;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+                " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(255, 102, 0, 0.4)'"
+                   onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(255, 102, 0, 0.3)'">
+                    Register Now For CENFEST! 🏆
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Generic countdown updater for all elements with .cesa-countdown
+        function parseTargetDate(str) {
+            try { return new Date(str).getTime(); }
+            catch (e) { return Date.now(); }
+        }
+
+        const countdownNodes = Array.from(document.querySelectorAll('.cesa-countdown'))
+            .map(node => ({
+                node,
+                target: parseTargetDate(node.getAttribute('data-target') || 'Nov 7, 2025 00:00:00'),
+                daysEl: node.querySelector('.days'),
+                hoursEl: node.querySelector('.hours'),
+                minutesEl: node.querySelector('.minutes'),
+                secondsEl: node.querySelector('.seconds')
+            }));
+
+        function updateAllCountdowns() {
+            const now = Date.now();
+            countdownNodes.forEach(item => {
+                const timeRemaining = item.target - now;
+                if (timeRemaining <= 0) {
+                    if (item.daysEl) item.daysEl.textContent = '00';
+                    if (item.hoursEl) item.hoursEl.textContent = '00';
+                    if (item.minutesEl) item.minutesEl.textContent = '00';
+                    if (item.secondsEl) item.secondsEl.textContent = '00';
+                    // Optional: replace or indicate finished
+                    return;
+                }
+
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                if (item.daysEl) item.daysEl.textContent = String(days).padStart(2, '0');
+                if (item.hoursEl) item.hoursEl.textContent = String(hours).padStart(2, '0');
+                if (item.minutesEl) item.minutesEl.textContent = String(minutes).padStart(2, '0');
+                if (item.secondsEl) item.secondsEl.textContent = String(seconds).padStart(2, '0');
+            });
+        }
+
+        // Initialize immediately and sync every second
+        updateAllCountdowns();
+        setInterval(updateAllCountdowns, 1000);
+    </script>
+
+    <!-- Events Card Grid -->
+    <section style="max-width:1100px;margin:48px auto 0 auto;padding:0 16px;">
+        <h2 style="text-align:center;font-size:2em;color:#0056b3;font-weight:700;margin-bottom:32px;">Featured Events</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;">
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">Rink Football</h3><br><br><br><br>
+                <p>Show your skills and teamwork in our annual football tournament.</p><br><br><br><br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">Basketball</h3><br><br><br><br>
+                <p>Compete in fast-paced matches and aim for the championship.</p><br><br><br><br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">       
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">Volleyball</h3><br><br><br><br>
+                <p>Join the excitement and spike your way to victory.</p><br><br><br><br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">STAADWAR</h3>
+                <p>Analyze loads, design components, and ensure the stability and efficiency of structures</p></br></br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">TREASURE HUNT</h3>
+                <p>Test your logical thinking, teamwork, and quick problem-solving abilities</p></br></br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:24px;text-align:center;">
+                <h3 style="color:#ff6600;font-size:1.2em;margin-bottom:8px;">REVIT CLASH</h3>
+                <p>Create 3D building models and detect clash points in multidisciplinary designs</p></br></br>
+                <a href="https://forms.gle/PyuQS1HFayUH9dS99" class="cta-btn" style="background:#0056b3;color:#fff;padding:8px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px;">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-brand">
+                <img src="cesa_logo.png" alt="CESA Logo">
+                <span style="font-weight:700;font-size:1.1em;">CESA Sports Committee</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/cesa.sggs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram"><span style="font-size:1.3em;">&#x1F4F7;</span> Insta</a>
+                <a href="mailto:cesa.sports@college.edu" title="Email">Email</a>
+                <a href="https://sggs.ac.in/" target="_blank" title="SGGS Website">SGGS Website</a>
+            </div>
+        </div>
+       <div class="footer-credit"><a href="https://www.instagram.com/ashu_91007/" target="_blank" style="text-decoration:none;color:inherit;">Website created by: Ashutosh Chandgude</a></div>
+    </footer>
+</body>
+</html>

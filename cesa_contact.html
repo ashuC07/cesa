@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CESA College Fest</title>
+    <link rel="stylesheet" href="cesa_event.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body style="background:#f7f8fa;color:#222;font-family:'Montserrat',Arial,sans-serif;">
+    <div class="contact-bg-img"></div>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" style="background:transparent;position:sticky;top:0;z-index:10;">
+        <div class="header-bar">
+            <div style="display:flex;align-items:center;gap:24px;">
+                <a href="cesa_event.html" style="margin-right:24px;"><img src="cesa_logo.png" alt="CESA Logo" style="height:80px;"></a>
+                <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;">
+                    <li><a href="cesa_event.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Home</a></li>
+                    <li><a href="cesa_about.html" style="color:#0056b3;font-weight:700;text-decoration:none;">About</a></li>
+                    <li><a href="gallery.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Gallery</a></li>
+                    <li><a href="cesa cup.html" style="color:#0056b3;font-weight:700;text-decoration:none;">CESA Cup</a></li>
+                    <li><a href="cenfest.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Cenfest</a></li>
+                    <li><a href="sponsors.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Our Sponsors</a></li>
+                    <li><a href="cesa_contact.html" class="active" style="color:#ff6600;font-weight:700;text-decoration:none;">Contact</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background:transparent center/cover no-repeat;padding:64px 0 32px 0;">
+        <div style="max-width:900px;margin:0 auto;text-align:center;color:#fff;">
+            <img src="cesa_logo.png" alt="CESA Logo" style="height:80px;margin-bottom:16px;filter:drop-shadow(0 4px 16px #0008);">
+            <h1 style="font-size:2.8em;font-weight:700;margin-bottom:12px;">Contact Us</h1>
+            <h2 style="font-size:1.5em;font-weight:400;margin-bottom:24px;">We're here to help!</h2>
+            <p style="font-size:1.1em;max-width:700px;margin:0 auto 24px auto;">Reach out for any queries, suggestions, or support regarding CESA Fest. We value your feedback and look forward to connecting with you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section style="max-width:700px;margin:48px auto 0 auto;padding:0 16px;">
+        <h2 style="text-align:center;font-size:2em;color:#0056b3;font-weight:700;margin-bottom:32px;">Contact Form</h2>
+        <form class="contact-form" style="background:#fff;border-radius:16px;box-shadow:0 2px 12px #0002;padding:32px;display:flex;flex-direction:column;gap:16px;">
+            <input type="text" placeholder="Your Name" required style="padding:12px;border-radius:8px;border:1px solid #ccc;font-size:1em;">
+            <input type="email" placeholder="Your Email" required style="padding:12px;border-radius:8px;border:1px solid #ccc;font-size:1em;">
+            <textarea placeholder="Your Message" required style="padding:12px;border-radius:8px;border:1px solid #ccc;font-size:1em;min-height:100px;"></textarea>
+            <button type="submit" class="cta-btn" style="background:#0056b3;color:#fff;padding:12px 32px;border-radius:8px;font-size:1.1em;font-weight:700;border:none;">Send Message</button>
+        </form>
+        <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.reset();
+            alert('Thank you for contacting us!');
+        });
+        </script>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-brand">
+                <img src="cesa_logo.png" alt="CESA Logo">
+                <span style="font-weight:700;font-size:1.1em;">CESA Contact</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/cesa.sggs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">instagram</a>
+                 <a href="mailto:cesa.sports@college.edu" title="Email">Email</a>
+            
+                <a href="https://sggs.ac.in/">SGGS Website</a>
+            </div>
+        </div>
+        <div class="footer-credit"><a href="https://www.instagram.com/ashu_91007/" target="_blank" style="text-decoration:none;color:inherit;">Website created by: Ashutosh Chandgude</a></div>
+    </footer>
+</body>
+</html>

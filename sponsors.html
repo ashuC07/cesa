@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Our Sponsors | CESA College Fest</title>
+    <link rel="stylesheet" href="cesa_event.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        .sponsors-hero { padding:64px 0 24px; text-align:center; }
+        .sponsor-note { max-width:820px;margin:0 auto 18px auto;color:#fff;opacity:0.95 }
+    /* sponsor-actions and edit button removed (static sponsor tiles) */
+    /* Sponsor page-specific caption styling */
+        .sponsors-page .gallery-caption {
+            position: absolute;
+            left: 50%;
+            bottom: 14px;
+            transform: translateX(-50%) translateY(6px);
+            background: rgba(255,255,255,0.94);
+            color: #111;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+            box-shadow: 0 8px 22px rgba(2,6,23,0.12);
+            text-transform: none;
+            opacity: 1;
+        }
+        .sponsors-page .gallery-item { overflow: visible; }
+        .sponsors-page .gallery-item::after { display:none; }
+
+        /* Force 3x2 grid on sponsor page, responsive down to 2/1 columns */
+        .sponsors-page .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-items: stretch;
+        }
+        @media (max-width: 900px) {
+            .sponsors-page .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .sponsors-page .gallery-grid { grid-template-columns: 1fr; }
+        }
+        /* Uniform logo box and hover animation */
+        .sponsors-page .gallery-item {
+            background: #fff;
+            padding: 18px 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            transition: transform 320ms cubic-bezier(.2,.9,.3,1), box-shadow 320ms ease;
+            will-change: transform;
+            overflow: hidden;
+        }
+        .sponsors-page .gallery-item img {
+            width: 100%;
+            max-width: 260px;
+            height: 140px;
+            object-fit: contain;
+            display: block;
+            background: rgba(255,255,255,0.98);
+            padding: 8px;
+            transition: transform 420ms cubic-bezier(.2,.9,.3,1), filter 320ms ease;
+        }
+        .sponsors-page .gallery-item:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+        }
+        /* Move caption below image (clean, bold) */
+        .sponsors-page .gallery-caption {
+            position: static !important;
+            left: auto !important;
+            bottom: auto !important;
+            transform: none !important;
+            background: transparent !important;
+            color: #111 !important;
+            padding: 10px 0 0 0 !important;
+            font-weight: 800 !important;
+            font-size: 1rem !important;
+            box-shadow: none !important;
+            opacity: 1 !important;
+            margin-top: 6px;
+        }
+        @media (max-width: 700px) {
+            .sponsors-page .gallery-item img { height: 120px; max-width: 220px; }
+        }
+    </style>
+    </head>
+<body class="sponsors-page" style="background:#f7f8fa;color:#222;font-family:'Montserrat',Arial,sans-serif;">
+    <div class="contact-bg-img"></div>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" style="background:transparent;box-shadow:0 2px 8px #0001;position:sticky;top:0;z-index:10;">
+        <div class="header-bar">
+            <div style="display:flex;align-items:center;gap:24px;">
+                <a href="cesa_event.html" style="margin-right:24px;"><img src="cesa_logo.png" alt="CESA Logo" style="height:80px;"></a>
+                <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;">
+                    <li><a href="cesa_event.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Home</a></li>
+                    <li><a href="cesa_about.html" style="color:#0056b3;font-weight:700;text-decoration:none;">About</a></li>
+                    <li><a href="gallery.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Gallery</a></li>
+                    <li><a href="cesa cup.html" style="color:#0056b3;font-weight:700;text-decoration:none;">CESA Cup</a></li>
+                    <li><a href="cenfest.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Cenfest</a></li>    
+                    <li><a href="sponsors.html" class="active" style="color:#ff6600;font-weight:700;text-decoration:none;">Our Sponsors</a></li>
+                    <li><a href="cesa_contact.html" style="color:#0056b3;font-weight:700;text-decoration:none;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sponsors-hero">
+        <div style="max-width:900px;margin:0 auto;text-align:center;color:#fff;">
+            <img src="cesa_logo.png" alt="CESA Logo" style="height:80px;margin-bottom:12px;filter:drop-shadow(0 4px 16px #0008);">
+            <h1 style="font-size:2.2em;font-weight:700;margin-bottom:6px;color:#1a1a2e;">Our Sponsors</h1>
+            <p class="sponsor-note" style="font-size:1.05em;color:#333;">We thank the organisations and partners who support CESA.</p>
+        </div>
+    </section>
+
+    <section style="max-width:1100px;margin:24px auto;padding:0 16px 48px 16px;">
+        <div class="gallery-grid">
+            <figure class="gallery-item" data-index="1">
+                <img src="1.jpg" alt="Sponsor 1">
+                <figcaption class="gallery-caption">SKN Infra Consultant</figcaption>
+            </figure>
+            <figure class="gallery-item" data-index="2">
+                <img src="2.jpg" alt="Sponsor 2">
+                <figcaption class="gallery-caption">The CADDGURU</figcaption>
+            </figure>
+            <figure class="gallery-item" data-index="3">
+                <img src="3.jpg" alt="Sponsor 3">
+                <figcaption class="gallery-caption">GRAVITY</figcaption>
+            </figure>
+            <figure class="gallery-item" data-index="4">
+                <img src="4.png" alt="Sponsor 4">
+                <figcaption class="gallery-caption">SPYKAR</figcaption>
+            </figure>
+            <figure class="gallery-item" data-index="5">
+                <img src="5.jpg" alt="Sponsor 5">
+                <figcaption class="gallery-caption">KILLER</figcaption>
+            </figure>
+            <figure class="gallery-item" data-index="6">
+                <img src="6.jpg" alt="Sponsor 6">
+                <figcaption class="gallery-caption">SPYKAR</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Edit functionality removed to make sponsors static -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-brand">
+                <img src="cesa_logo.png" alt="CESA Logo">
+                <span style="font-weight:700;font-size:1.1em;">CESA</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/cesa.sggs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">instagram</a>
+                <a href="mailto:cesa.sports@college.edu" title="Email">Email</a>
+                <a href="https://sggs.ac.in/">SGGS Website</a>
+            </div>
+        </div>
+        <div class="footer-credit"><a href="https://www.instagram.com/ashu_91007/" target="_blank" style="text-decoration:none;color:inherit;">Website created by: Ashutosh Chandgude</a></div>
+    </footer>
+</body>
+</html>
