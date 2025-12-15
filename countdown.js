@@ -1,6 +1,6 @@
 (function(){
     // Target date: 31 December 2025 23:59:59 (local time)
-    const targetDate = new Date('December 31, 2025 23:59:59').getTime();
+    const targetDate = new Date('january 1, 2026 23:59:59').getTime();
 
     // Select the four number elements inside the timer grid
     const daysEl = document.querySelector('.style-43 .style-45');
@@ -61,4 +61,5 @@
     // Start the timer (run immediately and then every second)
     updateTimer();
     const timerInterval = setInterval(updateTimer, 1000);
+
 })();
